@@ -2,7 +2,7 @@
 
 import { Button } from "./ui/button";
 import { ArrowRight, Play } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { MoneyTransferAnimation } from "./MoneyTransferAnimation";
 import { motion } from "framer-motion";
 
 export function HeroSection() {
@@ -100,7 +100,7 @@ export function HeroSection() {
             </motion.div>
           </motion.div>
 
-          {/* Right content - Phone mockup */}
+          {/* Right content - Animated Money Transfer */}
           <motion.div 
             className="relative lg:ml-8"
             initial={{ opacity: 0, x: 20 }}
@@ -108,28 +108,8 @@ export function HeroSection() {
             transition={{ delay: 0.4, duration: 0.8 }}
           >
             <div className="relative z-10">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBwYXltZW50JTIwYXBwJTIwaW50ZXJmYWNlfGVufDF8fHx8MTc1NjEyMjI5M3ww&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="SwiftPe mobile app interface"
-                className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
-              />
+              <MoneyTransferAnimation />
             </div>
-            
-            {/* Simple floating notification */}
-            <motion.div 
-              className="absolute top-6 right-0 bg-white rounded-lg shadow-lg p-3 border"
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1, duration: 0.6 }}
-            >
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-green-400 rounded-full" />
-                <div className="text-sm">
-                  <div className="font-medium">₹25,000</div>
-                  <div className="text-gray-500 text-xs">sent successfully</div>
-                </div>
-              </div>
-            </motion.div>
           </motion.div>
         </div>
       </div>
