@@ -65,9 +65,9 @@ export function HowItWorksSection() {
 
                 {/* Arrow connector */}
                 {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-1/2 -right-8 transform -translate-y-1/2 z-10">
-                    <div className="w-16 h-8 flex items-center justify-center">
-                      <ArrowRight className="h-6 w-6 text-blue-400" strokeWidth={2} />
+                  <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2 translate-x-1/2 z-10">
+                    <div className="w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-sm border border-gray-100">
+                      <ArrowRight className="h-4 w-4 text-blue-500" strokeWidth={2.5} />
                     </div>
                   </div>
                 )}
