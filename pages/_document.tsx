@@ -14,7 +14,11 @@ export default function Document() {
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="SwiftPe - Send Money to India Instantly" />
                 <meta name="twitter:description" content="Convert your USDC to INR in seconds. No gas fees, no hidden charges." />
-                <link rel="icon" href="/favicon.ico" />
+                {/* Favicon */}
+                <link rel="icon" href="/favicon.ico" sizes="any" />
+                <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+                <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+                <link rel="manifest" href="/manifest.json" />
             </Head>
             <body>
                 <Main />
