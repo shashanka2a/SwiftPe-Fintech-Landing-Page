@@ -1,26 +1,25 @@
 {
   "name": "SwiftPe - Send Money to India Instantly",
   "short_name": "SwiftPe",
-  "description": "Convert your USDC to INR in seconds. No gas fees, no hidden charges.",
+  "description": "Convert your USDC to INR in seconds. No gas fees, no hidden charges. Just fast, secure transfers with UPI-style receipts.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#3B82F6",
+  "theme_color": "#2563eb",
+  "categories": ["finance", "productivity", "utilities"],
+  "lang": "en",
+  "orientation": "portrait-primary",
   "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
     {
       "src": "/favicon.ico",
       "sizes": "16x16 32x32",
       "type": "image/x-icon"
-    },
-    {
-      "src": "/favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml"
-    },
-    {
-      "src": "/apple-touch-icon.png",
-      "sizes": "180x180",
-      "type": "image/png"
     }
   ]
 }
